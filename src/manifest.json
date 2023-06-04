@@ -1,0 +1,33 @@
+{
+  "name": "play-url",
+  "version": "0.1.0",
+  "description": "Send a m3u containing the active URL",
+  "manifest_version": 2,
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "play-url",
+    "default_icon": "icons/play-url.svg",
+    "theme_icons": [{
+      "light": "icons/play-url-light.svg",
+      "dark": "icons/play-url-dark.svg",
+      "size": 32
+    }]
+  },
+
+  "icons": {
+    "16": "icons/play-url.svg",
+    "32": "icons/play-url.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "commands": {
+    "play": {
+      "description": "play-url"
+    }
+  },
+
+  "permissions": ["activeTab", "contextMenus"]
+}
